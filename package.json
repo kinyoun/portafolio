@@ -1,0 +1,22 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio de Camila Goncalves Valente",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinyoun/portafolio.git"
+  },
+  "author": "Camila Goncalves Valente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinyoun/portafolio/issues"
+  },
+  "homepage": "https://github.com/kinyoun/portafolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
