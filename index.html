@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Camila Goncalves Valente's Portfolio</title>
         <meta charset="UTF-8">
-        <link rel="sylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
+        <div class="container-fluid">
+            <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #2C2D34">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img class="logo" src="images/APLogo-20-20.png" alt="Logo de Argentina Programa">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menuNavegacion" class="collapse navbar-collapse">
+                        <ol class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Acerca</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                            <li class="nav-item"><button class="btn btn-outline-success me-2" type="button"><a class="nav-link" href="#">Ingresar</a></button></li>
+                        </ol>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <main class="contenido">
+            <section>
+                <h1>Hola, soy Camila Goncalves Valente</h1>
+                <h2>Full stack web developer</h2>
+            </section>
+            <section>
+                <h2>Acerca de</h2>
+                <p>¡Hola! Mi nombre es Camila, soy médica recibida de la Universidad
+                    de Buenos Aires, programadora e ilustradora.</p>
+                <p>2017-actualidad: ayudante del Departamento de Microbiología y Parasitología Humana de la Universidad de Buenos Aires</p>
+                <p>2021-actualidad: ilustradora independiente</p>
+            </section>
+            <section class="habilidades">
+            </section>
+            <section class="proyectos">
+                <h2>Proyectos</h2>
+            </section>
+            <section>
+                <h2>Contacto</h2>
+                <p>Si tiene alguna pregunta o quiere trabajar conmigo, deje sus datos y me contactaré con usted lo más pronto posible.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Camila Goncalves Valente ©2022</p>
+        </footer>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
