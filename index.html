@@ -6,69 +6,198 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
         <!-- header -->
         <div class="container-fluid">
-            <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #2C2D34">
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand">
-                        <img class="logo" src="images/APLogo-20-20.png" alt="Logo de Argentina Programa">
-                    </a>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="--bs-bg-opacity: .5">
+              <div class="container">
+                    <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" class="navbar-brand">
+                        <img class="logo" src="images/logo.1.png" alt="Logo de Argentina Programa" height="50">
+                    </a>   
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div id="menuNavegacion" class="collapse navbar-collapse">
-                        <ol class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">Acerca</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                            <li class="nav-item"><button class="btn btn-outline-success me-2" type="button"><a class="nav-link" href="#">Ingresar</a></button></li>
-                        </ol>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                            <li class="nav-item"><button class="btn btn-outline-light me-2" type="button"><a class="nav-link" href="#">Ingresar</a></button></li>
+                        </ul>
                     </div>
                 </div>
             </nav>
         </div>
 
         <!-- main -->
-        <main class="contenido">
-            <section>
-                <div class="container flex-column d-flex align-items-center">
-                    <div>
-                        <h1><span class="fs-4">Hola, soy</span><br>
-                            <strong>Camila <br>
-                                Goncalves Valente</strong></h1>
-                    </div>
-                    <div>
-                        <h2 class="titulo">Full stack web developer</h2>
+        <main>
+            <section id="inicio" class="d-flex align-items-center">
+                <div class="container"> <!--flex-column d-flex align-items-center justify-content-center-->
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <h1><span class="fs-4">Hola, soy</span><br>
+                                <strong>Camila <br>
+                                    Goncalves Valente</strong></h1>
+                        </div>
+                        <div class="col-md-10">
+                            <h2 class="titulo">Full stack web developer</h2>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Acerca de</h2>
-                <div class="container d-flex justify-content-center align-items-center flex-shrink-1">
-                    <div class="fs-5">
-                        <p>¡Hola! Mi nombre es Camila, soy médica recibida de la Universidad
-                            de Buenos Aires, programadora e ilustradora.</p>
-                        <p>2017-actualidad: ayudante del Departamento de Microbiología y Parasitología Humana de la Universidad de Buenos Aires</p>
-                        <p>2021-actualidad: ilustradora independiente</p>
+
+        <!-- About -->
+            <section id="acerca">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2>Acerca de mi</h2>
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/icone-cercle-noir.png" >
+                    <div class="row fs-5">
+                        <div class="about-me col-md-6 d-flex flex-column justify-content-center">
+                            <p>¡Hola! Mi nombre es Camila, soy médica recibida de la Universidad
+                                de Buenos Aires, programadora e ilustradora.</p>
+                            <p>2017-actualidad: ayudante del Departamento de Microbiología y Parasitología Humana de la Universidad de Buenos Aires</p>
+                            <p>2021-actualidad: ilustradora independiente</p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <img src="images/icone-cercle-noir.png" >
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="habilidades">
+                <section class="progress_bar">
+                    <div class="container">
+                        <div class="skills row">
+                            <div class="software col row d-flex justify-content-center">
+                                <div class="col-2">
+                                    <img class="img-fluid" style="max-width:100%" src="images/html-degrade.png">
+                                </div>
+                                <div class="col-2">
+                                    <img class="img-fluid" style="max-width:100%" src="images/js-degrade.png">
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-2">
+                                    <img class="img-fluid" style="max-width:100%" src="images/css-degrade.png">
+                                </div>
+                                <div class="col-2">
+                                    <img class="img-fluid" style="max-width:100%" src="images/photoshop-degrade.png">
+                                </div>
+                            </div>
+    
+                            <div class="idiomas row col">
+                                <div class="col mx-auto" style="color: #ec5273;">
+                                    <ul>
+                                        <li>
+                                            <p>Español</p>
+                                            <div class="bar"><span class="español"></span></div>
+                                        </li>
+                                        <li>
+                                            <p>Inglés</p>
+                                            <div class="bar"><span class="ingles"></span></div>
+                                        </li>
+                                        <li>
+                                            <p>Alemán</p>
+                                            <div class="bar"><span class="aleman"></span></div>
+                                        </li>
+    
+                                        <li>
+                                            <p>Japonés</p>
+                                            <div class="bar"><span class="japones"></span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
             </section>
-            <section class="proyectos">
-                <h2>Proyectos</h2>
+
+        <!-- Projects -->
+            <section id="proyectos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2>Proyectos</h2>
+                        </div>
+                    </div>
+                    <div class="proyecto-1">
+                        <div class="envoltorio-proyecto d-flex justify-content-center m-5">
+                            <div class="descripcion-proyecto col-4 d-flex flex-column justify-content-center">
+                                <h3>Nombre del proyecto</h3>
+                                <p>Descripcion del proyecto</h4>
+                            </div>
+                            <div class="imagen-proyecto col-4 d-flex justify-content-center align-items-center">
+                                <img src="images/leaves.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-2">
+                        <div class="envoltorio-proyecto d-flex justify-content-center m-5">
+                            <div class="imagen-proyecto col-4 d-flex justify-content-center align-items-center">
+                                <img src="images/leaves.jpg">
+                            </div>
+                            <div class="descripcion-proyecto col-4 d-flex flex-column justify-content-center">
+                                <h3>Nombre del proyecto</h3>
+                                <p>Descripcion del proyecto</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>Contacto</h2>
-                <p>Si tiene alguna pregunta o quiere trabajar conmigo, deje sus datos y me contactaré con usted lo más pronto posible.</p>
+            
+        <!-- Contacto -->
+            <section id="contacto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2>Contacto</h2>
+                            <p>Si tiene alguna pregunta o quiere trabajar conmigo, deje sus datos y me contactaré con usted lo más pronto posible.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 shadow rounded p-5 mx-auto" style="background: rgba(0, 0, 0, 0.089);">
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" placeholder="Nombre" class="form-control">
+                                </div>
+                                <div class="col mb-3 input-field">
+                                    <label class="form-label">Apellido</label>
+                                    <input type="text" placeholder="Apellido" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="text" placeholder="nombre@email.com" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje</label>
+                                <textarea name="" rows="4" placeholder="Escriba aqui su mensaje" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark" style="background: #e74250;">Enviar</button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            <p>Camila Goncalves Valente ©2022</p>
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="background: linear-gradient(#151d3b, #151d3ba6)">
+                <div class="row d-flex justify-content-center align-items-center mt-3">
+                    <div class="col-1 d-flex justify-content-center d-grid gap-2">
+                        <a href="https://github.com/kinyoun"><img src="images/git-blanco.png" class="img-footer"></a>
+                        <a href="https://www.linkedin.com/in/camila-goncalves-valente-b4114811a/"><img src="images/linkedin-blanco.png" class="img-footer"></a>
+                        <a href="mailto:camilagvalente@hotmail.com"><img src="images/mail-blanco.png" class="img-footer"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer col mt-3">
+                        <p>Camila Goncalves Valente ©2022</p>
+                    </div>
+                </div>
+            </div>
         </footer>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
